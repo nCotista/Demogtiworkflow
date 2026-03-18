@@ -2,8 +2,9 @@ version: "3.8"
 services:
   my-app:
     image: ghcr.io/ncotista/auto-web:latest
+    platform: linux/amd64
     ports:
-      - "8080:80"
+      - "8083:80"
 
   watchtower:
     image: containrrr/watchtower
